@@ -2,6 +2,7 @@
 #include "Object.h"
 FAT32::FAT32()
 {
+    //Nếu sử dụng default constructor, mặc định drive sẽ là ổ F:
 	this->drive = L"////.//F:";
 
     this->FAT = new BYTE[512];

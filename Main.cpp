@@ -12,11 +12,12 @@ int main()
 	//chuyển về định dạng đúng của ổ đĩa (vd ổ C có định dạng \\.\C:)
 	driveName = L"\\\\.\\" + driveName + L":";
 	LPCWSTR drive = driveName.c_str();
-
+	cout << "\nBOOT SECTOR:\n";
 	FAT32 volume(drive);
 	
+	
 	volume.print_bootsector();
-	//volume.print_RDET();
+	volume.print_RDET();
 	volume.print_directory_tree();
 
 	

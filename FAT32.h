@@ -23,7 +23,6 @@ private:
 	BYTE* FAT; // để lưu dữ liệu bảng FAT
 	//BYTE* RDET; // để lưu dữ liệu bảng RDET
 	BYTE* BOOTSECTOR; // để lưu dữ liệu bootsector
-	
 	vector<Object*>list;
 
 public:
